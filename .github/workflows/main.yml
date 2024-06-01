@@ -1,0 +1,22 @@
+name: reto devOps
+
+on: 
+    pull_request:
+          branches: ["main"]
+
+    push: 
+          branches: ["main"]
+
+jobs:
+    build:
+      runs-on: windows 10
+      
+      steps: 
+        - name: revicion repositorio
+          run: echo esta ejecutando el entorno
+          
+        - name: Instalar dependencias
+          run: npm install
+ls -la
+      
+      
